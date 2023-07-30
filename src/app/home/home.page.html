@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="buttonheader">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-img src="../../assets/globomantics-logo-black.png" class="logo" />
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/news']">News</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-img src="../../assets/globomantics-logo-black.png" class="logo" />
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <app-content />
   </div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" icon="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" icon="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" icon="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-title size="small">Globomantics Corp 2023</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
